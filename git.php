@@ -20,10 +20,10 @@
 
     <?php
     foreach ($data as $git){
-        echo '<div class="user__block">
+        echo '<a href="' . $git['html_url'] . '"><div class="user__block">
                             <p>'.$git['name'].'</p>
                             
-                          </div>';
+                          </div></a>';
     }
     ?>
 
