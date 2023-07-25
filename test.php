@@ -8,9 +8,9 @@ function run_curl($url){
     curl_close($curl);
     $data = json_decode($data,true);
     if(isset($data['message']) == 'Not Found'){
-        return 'error';
+        header('Location: index.html?error=UserNotFound');
+    }else{
+        return $data;
     }
-    return $data;
-
 }
 ?>

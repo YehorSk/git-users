@@ -9,14 +9,31 @@ body{
 
 }
 
-.page__title{
-    color: white;
+.page__header{
     background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: 2rem;
 }
-.page__title a{
+.page__header .page__title{
+    align-self: flex-start;
+    color: white;
+}
+.page__header .page__title a{
     color: white;
     font-size: 1rem;
+}
+.page__header .page__search{
+    align-self: center;
+    align-content: center;
+}
+.page__header .page__search input[type='text']{
+    padding: 1rem 2rem 1rem 1rem;
+    border: none;
+}
+.page__header .page__search input[type='submit']{
+    padding: 1rem;
+    background-color: white;
 }
 .users__list{
     display: flex;

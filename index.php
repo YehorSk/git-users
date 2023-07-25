@@ -9,8 +9,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="page__title">
-        <h1>Git Users</h1>
+    <div class="page__header">
+        <div class="page__title">
+            <h1>Git Users</h1>
+        </div>
+        <div class="page__search">
+            <form action="includes/search.inc.php" method="post">
+                <input type="text" name="username" placeholder="Type username:">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+
     </div>
     <div class="users__list">
 
